@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(211, 211, 211);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(121, 120, 120);
+	border-radius: 5px;
+}
+
+body {
+	font-family: "IBM Plex Sans", sans-serif;
+	background-color: #f6f6f6;
+}
+
+a:hover {
+	color: initial;
+}
+
+.filter .ant-collapse-content {
+	border-top: none;
+	background-color: transparent;
+}
+
+.hiddenScrollbar {
+	-ms-overflow-style: none;
+	/* for Internet Explorer, Edge */
+	scrollbar-width: none;
+	/* for Firefox */
+	overflow-y: scroll;
+}
+
+.hiddenScrollbar::-webkit-scrollbar {
+	display: none;
+	/* for Chrome, Safari, and Opera */
+}
+
+.JobsList .HeartTwoTone svg {
+	fill: gray;
+	font-weight: bold;
+}
+
+.text-xls {
+	font-size: 14px;
+}
+
+.text-2xls {
+	font-size: 11px;
+}
+
+.JobDetail .icon svg {
+	fill: gray;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.JobDetail {
+	height: 500px;
+}
+
+.dropdown .dropbtn {
+	border-radius: 18px;
+	font-size: 12px;
+	border: 2px solid rgba(128, 128, 128, 0.171);
+	font-weight: bold;
+	outline: none;
+	color: rgb(0, 0, 0);
+	padding: 8px 14px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 18px;
+	margin-left: -34px;
+	margin-top: 2px;
+}
+
+.dropdown-content span {
+	float: none;
+	color: black;
+	/* color: green; */
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content span:hover {
+	color: green;
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.profile-cover-img {
+	z-index: -10;
+}
+
+.profile-others {
+	z-index: 999;
+}
+
+.profile-part {
+	z-index: 0;
+}
+
+.custom-settings-collapse svg {
+	transform: rotate(90deg);
+}
+
+.active-section {
+	background-color: rgb(243, 244, 246, 1);
+	color: rgb(5 150 105);
+}
+
+.screen {
+	min-height: 60vh;
+}
+
+.h-app-screen {
+	height: calc(100vh - 64px);
+}
+
+.nav-dashboard {
+	.nav-item.active {
+		@apply bg-primary-400 text-white;
+	}
+}
